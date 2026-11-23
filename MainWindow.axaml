@@ -8,13 +8,13 @@
         x:Class="HolaAvalonia.MainWindow"
         Title="Mi primera aplicación en Avalonia">
 
-    <StackPanel Margin="20">
-        <TextBlock Text="Hola, soy Adrián López"
-                   FontSize="24"/>
+    <Grid Background="{DynamicResource Theme_BackgroundBrush}">
+        <StackPanel Name="panel" Margin="20">
+                <TextBlock Name="saludo" Text="Hola, soy Ana" FontSize="24"/>
+                <Button Name="boton" Content="Púlsame" Margin="0,10,0,0"/>
+        </StackPanel>
 
-        <Button Content="Vamos"
-                Margin="0,10,0,0"/>
-    </StackPanel>
+    </Grid>
 
 </Window>
 
